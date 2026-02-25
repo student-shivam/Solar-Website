@@ -1,0 +1,38 @@
+#cta {
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+.cta-heading {
+    color: #333;
+    font-weight: 700;
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: 2rem;
+}
+
+.btn-cta {
+    background-color: #e91e63;
+    /* Magenta color from reference */
+    color: white;
+    border: none;
+    font-weight: 500;
+    border-radius: 4px;
+    /* Slightly rounded as per reference */
+    transition: all 0.3s ease;
+    text-transform: none;
+    /* Keep "contact Us" as requested */
+}
+
+.btn-cta:hover {
+    background-color: #d81b60;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .cta-heading {
+        font-size: 1.5rem;
+    }
+}

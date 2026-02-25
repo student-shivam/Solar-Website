@@ -1,0 +1,138 @@
+.navbar {
+  background: #0d0d0d;
+  padding: 15px 0;
+}
+
+.navbar .nav-link {
+  color: white !important;
+  margin-left: 15px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+  color: #28a745 !important;
+}
+
+/* Dropdown Styles */
+.dropdown-menu {
+  background: #1a1a1a !important;
+  border-top: 3px solid #6f42c1 !important;
+  padding: 0;
+  min-width: 250px;
+  margin-top: 0;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5) !important;
+  border: none;
+}
+
+.dropdown-item {
+  color: white !important;
+  padding: 12px 20px;
+  font-weight: 500;
+  border-bottom: 1px solid #333;
+  transition: all 0.3s ease;
+}
+
+.dropdown-item:last-child {
+  border-bottom: none;
+}
+
+.dropdown-item span {
+  font-size: 1.2rem;
+  line-height: 1;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.dropdown-item:hover {
+  background: #333 !important;
+  color: #28a745 !important;
+  padding-left: 25px;
+}
+
+.dropdown-item:hover span {
+  color: #28a745;
+}
+
+/* Show dropdown on hover (Desktop) */
+@media (min-width: 992px) {
+  .dropdown:hover>.dropdown-menu {
+    display: block;
+    animation: fadeIn 0.3s ease;
+  }
+
+  .dropdown-submenu {
+    position: relative;
+  }
+
+  .dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: 0;
+    display: none;
+    border-top: none !important;
+    border-left: 3px solid #6f42c1 !important;
+    border-radius: 0 8px 8px 8px;
+  }
+
+  .dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+    animation: fadeInSide 0.3s ease;
+  }
+
+  .dropdown-submenu:hover>.dropdown-item {
+    background: #6f42c1 !important;
+    color: white !important;
+  }
+}
+
+@keyframes fadeInSide {
+  from {
+    opacity: 0;
+    transform: translateX(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile submenus */
+@media (max-width: 991px) {
+  .dropdown-submenu .dropdown-menu {
+    position: static;
+    display: block !important;
+    background: #222 !important;
+    border-left: 3px solid #28a745 !important;
+    margin-left: 15px;
+    border-top: none !important;
+    box-shadow: none !important;
+  }
+}
+
+.navbar-brand {
+  padding: 0;
+}
+
+.nav-logo {
+  max-height: 50px;
+  width: auto;
+  transition: transform 0.3s ease;
+}
+
+.nav-logo:hover {
+  transform: scale(1.05);
+}
