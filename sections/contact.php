@@ -1,4 +1,13 @@
 <section id="contact-page">
+    <!-- Hero Banner -->
+    <div class="contact-hero">
+        <div class="contact-hero-overlay"></div>
+        <div class="container text-center contact-hero-content">
+            <h1 class="display-3 fw-bold text-white mb-2">Contact Us</h1>
+            <p class="lead text-white-50">We’d love to hear from you</p>
+        </div>
+    </div>
+
     <!-- Map Container -->
     <div class="contact-map-wrapper">
         <iframe 
@@ -16,7 +25,7 @@
     <div class="container py-5 my-5">
         <div class="row g-5">
             <!-- Info Column -->
-            <div class="col-lg-5" data-aos="fade-right">
+            <div class="col-lg-5">
                 <div class="contact-info-card h-100 p-4 p-md-5 bg-white shadow-sm rounded-4">
                     <h2 class="section-title mb-4">Prabha Enterprises</h2>
                     <p class="text-muted mb-5">Providing high-quality solar energy solutions across India. Get in touch with us for consultations or project inquiries.</p>
@@ -64,25 +73,25 @@
             </div>
 
             <!-- Form Column -->
-            <div class="col-lg-7" data-aos="fade-left">
+            <div class="col-lg-7">
                 <div class="contact-form-card h-100 p-4 p-md-5 bg-white shadow-sm rounded-4">
                     <h3 class="mb-4">Send us a Message</h3>
                     <form action="#" method="POST">
                         <div class="row gy-4">
                             <div class="col-md-6">
-                                <label class="form-label fw-semibold">Full Name</label>
+                                <label class="form-label fw-semibold">Name</label>
                                 <input type="text" class="form-control" name="name" placeholder="John Doe" required>
                             </div>
                             <div class="col-md-6">
-                                <label class="form-label fw-semibold">Phone Field</label>
+                                <label class="form-label fw-semibold">Phone</label>
                                 <input type="tel" class="form-control" name="phone" placeholder="+91 1234567890" required>
                             </div>
                             <div class="col-12">
-                                <label class="form-label fw-semibold">Email Address</label>
+                                <label class="form-label fw-semibold">Email</label>
                                 <input type="email" class="form-control" name="email" placeholder="example@email.com" required>
                             </div>
                             <div class="col-12">
-                                <label class="form-label fw-semibold">Message box</label>
+                                <label class="form-label fw-semibold">Message</label>
                                 <textarea class="form-control" name="message" rows="5" placeholder="Tell us about your requirements..." required></textarea>
                             </div>
                             <div class="col-12">
