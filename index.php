@@ -53,7 +53,9 @@
 <!-- <#?php include 'sections/contact.php'; ?> -->
 
 <!-- NEWS -->
+<div class="home-news-compact">
 <?php include 'sections/news.php'; ?>
+</div>
 
 <!-- FOOTER -->
 <?php include 'sections/footer.php'; ?>
