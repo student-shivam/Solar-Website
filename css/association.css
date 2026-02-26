@@ -1,99 +1,127 @@
 .association-section {
-  padding: 48px 0;
-  background: #f5f7fa;
+  padding: 56px 0;
+  background: linear-gradient(180deg, #f8fafc 0%, #eef2f7 100%);
 }
 
 .association-header {
   text-align: center;
   max-width: 760px;
-  margin: 0 auto 24px;
+  margin: 0 auto 30px;
 }
 
 .association-header h2 {
-  margin: 0 0 8px;
-  font-size: 2.25rem;
+  margin: 0 0 10px;
+  font-size: 2.2rem;
   line-height: 1.2;
   font-weight: 800;
-  color: #111827;
+  color: #0f172a;
+  letter-spacing: -0.5px;
 }
 
 .association-header h2 span {
-  color: #e91e63;
+  color: #6366f1;
 }
 
 .association-header p {
   margin: 0;
   font-size: 1rem;
   line-height: 1.7;
-  color: #5b6473;
+  color: #64748b;
 }
 
+/* GRID */
 .association-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 14px;
+  gap: 18px;
   align-items: stretch;
 }
 
+/* CARD */
 .association-card {
-  min-height: 108px;
+  min-height: 110px;
   background: #ffffff;
-  border: 1px solid #e4e9f0;
-  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 16px;
-  transition: transform 0.28s ease, border-color 0.28s ease;
+  padding: 18px;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.05);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
 }
 
+/* subtle top accent */
+.association-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, #16a34a, #6366f1);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.35s ease;
+}
+
+/* LOGO */
 .association-card img {
-  height: 52px;
+  height: 54px;
   width: auto;
   max-width: 100%;
   object-fit: contain;
   filter: grayscale(100%);
-  opacity: 0.86;
-  transition: transform 0.28s ease, filter 0.28s ease, opacity 0.28s ease;
+  opacity: 0.85;
+  transition: all 0.35s ease;
 }
 
+/* HOVER EFFECT */
 .association-card:hover {
-  transform: translateY(-3px);
-  border-color: #cfd9e6;
+  transform: translateY(-6px);
+  box-shadow: 0 16px 30px rgba(15, 23, 42, 0.12);
+  border-color: #cbd5e1;
+}
+
+.association-card:hover::before {
+  transform: scaleX(1);
 }
 
 .association-card:hover img {
   filter: grayscale(0%);
   opacity: 1;
-  transform: scale(1.03);
+  transform: scale(1.05);
 }
 
+/* RESPONSIVE */
 @media (max-width: 991.98px) {
   .association-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .association-header h2 {
-    font-size: 1.95rem;
+    font-size: 1.9rem;
   }
 }
 
 @media (max-width: 575.98px) {
   .association-section {
-    padding: 38px 0;
+    padding: 42px 0;
   }
 
   .association-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 10px;
+    gap: 12px;
   }
 
   .association-card {
-    min-height: 92px;
-    padding: 12px;
+    min-height: 95px;
+    padding: 14px;
   }
 
   .association-card img {
-    height: 44px;
+    height: 46px;
   }
 }

@@ -50,7 +50,7 @@
 <?php include 'sections/association.php'; ?>
 
 <!-- CONTACT -->
-<?php include 'sections/contact.php'; ?>
+<!-- <#?php include 'sections/contact.php'; ?> -->
 
 <!-- NEWS -->
 <?php include 'sections/news.php'; ?>
