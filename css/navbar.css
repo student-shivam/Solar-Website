@@ -136,3 +136,26 @@
 .nav-logo:hover {
   transform: scale(1.05);
 }
+
+.custom-toggler {
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  padding: 7px 8px;
+  border-radius: 8px;
+  box-shadow: none !important;
+}
+
+.custom-toggler:focus {
+  box-shadow: 0 0 0 0.15rem rgba(255, 255, 255, 0.2) !important;
+}
+
+.custom-toggler .hamburger-line {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background-color: #ffffff;
+  border-radius: 2px;
+}
+
+.custom-toggler .hamburger-line + .hamburger-line {
+  margin-top: 5px;
+}
